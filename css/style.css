@@ -20,7 +20,7 @@
 }
 
 body{
-    min-width: 375px;
+    min-width: 360px;
 }
 
 section.header{
@@ -35,6 +35,7 @@ section.header{
     height: 100%;
     align-items: center;
     border: 1px solid black;
+    padding: 0 2rem 0 2rem;
 
 }
 
@@ -61,10 +62,46 @@ div.icon{
     background-color: teal;
 }
 
+section.big-pics{
+    margin-top: 5rem;
+    background-color: #9792e4;
+    text-align: center;
+}
+
+.plan{
+    width: 100%;
+    height: 300px;
+
+}
+
+div.app{
+    width: 100%;
+    background-color: whitesmoke;
+    height: 300px;
+}
+
+section.testimonials{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+div.users{
+    background-color: #9792e4;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
 /* TABLET */
 
 @media screen and (min-width: 810px) {
-    section.top-main{
+    section.demo{
         width: 800px;
     }
 
@@ -79,6 +116,23 @@ div.icon{
 
     .cards .card:first-child{
         width: calc(100% / 3 * 2);
+    }
+
+    div.users{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.users>img{
+        width: 30%;
+        height: 150px;
+    }
+    div.users>p{
+        width: 70%;
+    }
+    /* DA RIMOUVERE SOLO PER STRUTTURA */
+    div.users>span{
+        display: none;
     }
 
 
