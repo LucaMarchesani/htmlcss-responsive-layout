@@ -6,3 +6,81 @@
     box-sizing: border-box;
 }
 
+.flex{
+    display: flex;
+}
+
+.center{
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.t-center{
+    text-align: center;
+}
+
+body{
+    min-width: 375px;
+}
+
+section.header{
+    width: 100%;
+    height: 90px;
+    background-color: #0084fd;
+}
+
+.logo,
+.navbar{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.navbar{
+    justify-content: flex-end;
+}
+
+div.card{
+    width: 100%;
+    background-color: #b5ddff;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+}
+
+div.pic{
+    width: 100%;
+    height: 300px;
+    background-color: teal;
+}
+
+div.icon{
+    width: 150px;
+    height: 150px;
+    background-color: teal;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 810px) {
+    section.top-main{
+        width: 800px;
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards .card{
+        width: calc(100% / 3);
+    }
+
+    .cards .card:first-child{
+        width: calc(100% / 3 * 2);
+    }
+
+
+}
+
