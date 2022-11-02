@@ -43,6 +43,15 @@ section.header{
     justify-content: flex-end;
 }
 
+.navbar>ul{
+    display: none;
+    list-style: none;
+}
+
+.navbar ul>li{
+    margin-left: 1rem;
+}
+
 div.card{
     width: 100%;
     background-color: #b5ddff;
@@ -106,6 +115,40 @@ div.numb-card{
     padding: 1rem;
 }
 
+div.about-content>div{
+    margin-top: 2rem;
+}
+
+div.about-left{
+    padding-right: 5rem;
+}
+
+section.free{
+    text-align: center;
+    background-color: #9792e4;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.free>*{
+    margin-top: 1.5rem;
+}
+
+.piedone{
+    background-color: #333333;
+    text-align: center;
+    padding-top: .5rem;
+    color: white;
+}
+
+.piedone>p{
+    margin-top: 1.5rem;
+}
+
+
+
+
+
 
 
 
@@ -148,7 +191,7 @@ div.numb-card{
         width: 70%;
     }
     /* DA RIMOUVERE SOLO PER STRUTTURA */
-    div.users>span{
+    .hidden{
         display: none;
     }
 
@@ -160,11 +203,46 @@ div.numb-card{
 
     div.numb-card{
         width: calc(100% / 2 - .5rem);
-        
     }
 
+    div.about-content{
+        display: flex;  
+    }
+
+    .about-left{
+        width: 60%;
+        padding-left: 2rem;
+    }
+
+    .about-right{
+        width: 30%;
+}
+
+    .about-right>img{
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 810px){
+    body{
+        width: 100%;
+    }
+
+    .navbar>i{
+        display: none;
+    }
+
+    .navbar>ul{
+        display: flex;
+    }
+
+
+
+
     
-
-
 }
 
