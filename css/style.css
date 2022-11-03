@@ -32,20 +32,13 @@ div.header{
     width: 100%;
     height: 90px;
     background-color: #0084fd;
+    justify-content: space-between;
 }
 
 .logo,
 .navbar{
-    width: 50%;
-    height: 100%;
     align-items: center;
     padding: 0 2rem 0 2rem;
-
-}
-
-.navbar{
-    justify-content: flex-end;
-    color: white;
 }
 
 .navbar>ul{
@@ -55,6 +48,16 @@ div.header{
 
 .navbar ul>li{
     margin-left: 1rem;
+    font-size: .9rem;
+    color: #ffffff;
+}
+
+.navbar>button{
+    display: none;
+    border: none;
+    padding: .3rem .5rem;
+    border-radius: 20px;
+    font-size: .8rem;
 }
 
 div.card{
@@ -66,17 +69,31 @@ div.card{
 
 h2{
     padding: 2rem 0 2rem 0;
+    font-size: 1.7rem;
+}
+
+article.text>button{
+    border: none;
+    padding: 1rem 3rem;
+    margin: 2rem 0;
+    background-color: #0084fd;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+
+article.text>p{
+    line-height: 1.5rem;
+}
+
+figure.pic{
 
 }
 
-div.pic{
+figure.pic>img{
     width: 100%;
-    height: 300px;
-    background-color: teal;
-}
-
-div.pic>img{
-    width: 100%;
+    vertical-align: bottom;
 }
 
 div.icon{
@@ -179,6 +196,7 @@ section.free{
         width: 100%;
     }
 
+
     .cards{
         display: flex;
         flex-wrap: wrap;
@@ -250,23 +268,33 @@ section.free{
 
     div.header{
         height: 45px;
+        padding: 0 9rem 0 9rem;
     }
 
-    div.header,
+    div.logo>img{
+        height: 50%;
+    }
+
     section.demo,
     section.big-pics,
     section.testimonials,
     section.benefits,
     section.about,
     section.free{
-        padding: 0 15rem 0 15rem;
+        padding: 0 10rem 0 10rem;
+    }
+
+    figure.pic{
+        display: flex;
+        align-items: flex-end;
     }
 
     .navbar>i{
         display: none;
     }
 
-    .navbar>ul{
+    .navbar>ul,
+    .navbar>button{
         display: flex;
     }
 
