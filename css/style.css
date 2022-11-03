@@ -182,10 +182,12 @@ section.free{
         display: flex;
         flex-wrap: wrap;
     }
-
+    /* TEST IMG RIMUOVERE */
     div.users>img{
-        width: 30%;
+        width: 150px;
         height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
     }
     div.users>p{
         width: 70%;
@@ -238,6 +240,10 @@ section.free{
 
     .navbar>ul{
         display: flex;
+    }
+
+    div.numb-card{
+        width: calc(100% / 3 - .5rem);
     }
 
 
