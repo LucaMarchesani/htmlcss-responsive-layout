@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLEFONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
         <!-- NAV CONTENT -->
-        <section class="header flex">
-            <div class="logo flex">logo</div>
+        <div class="header flex">
+            <div class="logo flex">
+                <img src="./img/logo.png" alt="">
+            </div>
             <nav class="navbar flex">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars fa-2x"></i>
                 <ul>
                     <li>Planning</li>
                     <li>Testimonials</li>
@@ -25,7 +30,7 @@
                     <li><button>Get Started</button></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     
     </header>
 
@@ -33,17 +38,21 @@
         <!-- MAIN CONTENT -->
         <section class="demo center">
             <div class="cards">
-                <div class="card center">
-                    <h2>TITOLO</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                        Assumenda delectus temporibus voluptates eum!
-                        Non aliquam sint voluptatem saepe!
-                        Libero autem architecto modi pariatur.
-                        At doloremque quam tenetur excepturi.
-                    </p>
-                    <button>APP STORE</button>
-                    <div class="pic"></div>
+                <div class="big card center">
+                    <article class="text">
+                        <h2 class="blue-text">Get a demo application</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet.
+                            Assumenda delectus temporibus voluptates eum!
+                            Non aliquam sint voluptatem saepe!
+                            Libero autem architecto modi pariatur.
+                            At doloremque quam tenetur excepturi.
+                        </p>
+                        <button>APP STORE</button>
+                    </article>
+                    <div class="pic">
+                        <img src="./img/phone.png" alt="">
+                    </div>
                 </div>
                 <div class="card t-center center">
                     <i>ICONA</i>
@@ -125,8 +134,8 @@
                 Placeat dolores accusamus, nihil eius voluptate ipsum accusantium.
                 Porro provident praesentium accusamus, iste quibusdam nisi doloremque?
             </p>
-            <div class="users"><span class="hidden">IMMAGINE</span>
-                <img src="./img/testimonial1.jpg" alt="">
+            <div class="users">
+                <img src="" alt=""><span class="hidden">IMMAGINE</span>
                 <p>
                     Lorem ipsum dolor sit amet.
                     Quas minus atque corrupti nam.
@@ -135,8 +144,8 @@
                     Maiores, quam quia? Maxime, consequatur!
                 </p>
             </div>
-            <div class="users"><span class="hidden">IMMAGINE</span>
-                <img src="" alt="">
+            <div class="users">
+                <img src="" alt=""><span class="hidden">IMMAGINE</span>
                 <p>
                     Lorem ipsum dolor sit amet.
                     Quas minus atque corrupti nam.

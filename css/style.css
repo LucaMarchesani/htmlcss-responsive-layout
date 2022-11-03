@@ -19,11 +19,16 @@
     text-align: center;
 }
 
-body{
-    min-width: 360px;
+.blue-text{
+    color: #0084fd;
 }
 
-section.header{
+body{
+    min-width: 360px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+div.header{
     width: 100%;
     height: 90px;
     background-color: #0084fd;
@@ -34,13 +39,13 @@ section.header{
     width: 50%;
     height: 100%;
     align-items: center;
-    border: 1px solid black;
     padding: 0 2rem 0 2rem;
 
 }
 
 .navbar{
     justify-content: flex-end;
+    color: white;
 }
 
 .navbar>ul{
@@ -59,10 +64,19 @@ div.card{
     margin-top: 1.5rem;
 }
 
+h2{
+    padding: 2rem 0 2rem 0;
+
+}
+
 div.pic{
     width: 100%;
     height: 300px;
     background-color: teal;
+}
+
+div.pic>img{
+    width: 100%;
 }
 
 div.icon{
@@ -162,7 +176,7 @@ section.free{
 
 @media screen and (min-width: 810px) {
     body{
-        width: 810px;
+        width: 100%;
     }
 
     .cards{
@@ -229,9 +243,23 @@ section.free{
 
 /* DESKTOP */
 
-@media screen and (min-width: 810px){
+@media screen and (min-width: 900px){
     body{
         width: 100%;
+    }
+
+    div.header{
+        height: 45px;
+    }
+
+    div.header,
+    section.demo,
+    section.big-pics,
+    section.testimonials,
+    section.benefits,
+    section.about,
+    section.free{
+        padding: 0 15rem 0 15rem;
     }
 
     .navbar>i{
@@ -239,6 +267,10 @@ section.free{
     }
 
     .navbar>ul{
+        display: flex;
+    }
+
+    div.big{
         display: flex;
     }
 
