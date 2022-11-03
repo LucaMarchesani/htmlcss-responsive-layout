@@ -60,6 +60,10 @@ div.header{
     font-size: .8rem;
 }
 
+section.demo{
+    margin-bottom: 4rem;
+}
+
 div.card{
     width: 100%;
     background-color: #b5ddff;
@@ -115,17 +119,16 @@ div.icon{
 }
 
 section.big-pics{
-    margin-top: 5rem;
     background-color: #9792e4;
-    padding: 2rem;
     line-height: 2rem;
+    padding: 2rem 0 3rem;
 }
 
 div.plan{
-    width: 100%;
-    padding: 2rem 1.5rem;
+    margin: 0 auto;
+    width: 300px;
     color: #ffffff;
-
+    padding: 2rem 0 2rem;
 }
 
 .plan>img{
@@ -138,11 +141,12 @@ div.plan{
 }
 
 div.app{
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 300px;
     background-color: whitesmoke;
     border-radius: 20px;
-    padding: 2rem 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .app>img{
@@ -264,6 +268,10 @@ div.about-content>div{
     border-radius: 50%;
 }
 
+.about-right>h2{
+    color: #9792e4;
+}
+
 .about-right>button{
     font-size: 1rem;
     border: none;
@@ -281,7 +289,7 @@ section.free{
     text-align: center;
     background-color: #9792e4;
     margin-top: 2rem;
-    padding: 2rem;
+    padding: 3rem 2rem;
 }
 
 .free>*{
@@ -322,14 +330,19 @@ span>a{
     color: #ffffff;
 }
 
-.piedone{
+.footer{
     background-color: #333333;
     text-align: center;
-    padding-top: .5rem;
+    padding: 2rem;
     color: white;
+    font-size: 1.2rem;
 }
 
-.piedone>p{
+.footer a{
+    color: #9792e4;
+}
+
+.footer>p{
     margin-top: 1.5rem;
 }
 
@@ -456,19 +469,10 @@ span>a{
 
     section.big-pics{
         display: flex;
-        justify-content: space-around;
     }
 
-    div.plan{
-        width: 45%;
-        padding-top: 6rem;
-    }
 
-    div.app{
-        width: 40%;
-        margin: 10rem 0 10rem;
-    }
-
+    
     section.benefits{
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -476,6 +480,11 @@ span>a{
 
     div.numb-card{
         width: calc(100% / 3 - 1rem);
+    }
+
+    section.free{
+        padding-top: 3rem;
+        padding-bottom: 4rem;
     }
 
 
